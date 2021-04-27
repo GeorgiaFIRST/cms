@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Posts",
+  "info": {
+    "name": "Post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "default": "Untitled",
+      "maxLength": 150
+    },
+    "Body": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
